@@ -1,59 +1,137 @@
-<!doctype html>
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dota:3</title>
-      <link rel="stylesheet" href="style.css" />
-    <style>
-      body {
-        background-color: #f7d7ef;
-      }
-      h1 {
-        font-family: FreeMono, monospace;
-        color: #f760d2;
+    <link rel="stylesheet" type="text/css" href="dota.css" />
+  <style>
+    body {
+    background-color: white;
+}
+.start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ed0c93;
+  font-family: FreeMono, monospace;
+        color: white;
         font-weight: bold;
-        text-align: center;
-      }
-      h3 {
-        font-family: FreeMono, monospace;
+}
+h1 {
+  width: 400px;
+  text-align: center;
+}
+.ava {
+  width: 90px;
+  height: 90px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+h3 {
+    font-family: FreeMono, monospace;
         color: #fa7ddb;
        text-align: center;
-      }
-      button {
-        background: #ed0c93;
-        width: 200px;
-        height: 70px;
-          border: solid #ed0c93;
-        border-radius: 5px;
-        color: white;
-        font-size: 25px;
-        font-family: FreeMono, monospace;
-        box-shadow: 2px 2px 4px #ed0c93;
-      }
-      button:hover {
-        background: #fa169f;
-        width: 200px;
-        height: 70px;
-        border: solid #ed0c93;
-        border-radius: 5px;
-        color: white;
-        font-size: 25px;
-        font-family: FreeMono, monospace;
-        box-shadow: 4px 4px 8px #fa169f;
-      }
-      .b {
-        text-align: center;
-      }
-         </style>
-  </head>
-  <body>
+       margin-top: 10px;
+}
+button {
+    background: #ed0c93;
+    width: 200px;
+    height: 70px;
+      border: solid #ed0c93;
+    border-radius: 5px;
+    color: white;
+    font-size: 25px;
+    font-family: FreeMono, monospace;
+    box-shadow: 2px 2px 4px #ed0c93;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  button:hover {
+    background: #fa169f;
+    width: 200px;
+    height: 70px;
+    border: solid #ed0c93;
+    border-radius: 5px;
+    color: white;
+    font-size: 25px;
+    font-family: FreeMono, monospace;
+    box-shadow: 4px 4px 8px #fa169f;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .b {
+    display: flex;
+   justify-content: center;
+  }
+  .t {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    }
+  .imgs {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    opacity: 0;
+    transform: translateX(-1%);
+    animation: ani 1.5s forwards;
+  }
+  .img1 {
+    width: 260px;
+    height: 180px;
+  }
+  .img2 {
+    width: 260px;
+    height: 180px;
+  }
+  .img3 {
+    width: 260px;
+    height: 180px;
+  }
+   .text {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-family: monospace;
+    text-decoration: underline;
+    color: #ed0c93;
+    cursor: pointer;
+  
+    }
+  @keyframes ani {
+    0% {
+        opacity: 0; 
+        transform: translateX(-1%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+  </style>
+</head>
+<body>
+    <nav class="start">
+        <img class="ava" src="avatar-1001824067602.jpg" alt="ava"/>
     <h1>Дота 3 скачать бесплатно</h1>
+    </nav>
     <h3>слыш пацан или может не пацан не ленись подпишись на канал <br> 
-      лайк поставь если что он выглядит будто палец который направлен вверх</h3>
-   <div class="b"> 
-    <a href="https://t.me/grrr_72?"> 
-      <button>подпишись!</button> 
-    </a>
-   </div>
-    <img class="c" src="./photo1711042071.jpeg">
-  </body>
-</html>
+        лайк поставь если что он выглядит будто палец который направлен вверх</h3>
+        <div class="b">
+            <a href="https://t.me/grrr_72?"> 
+              <button>подпишись!</button> 
+            </a> 
+           </div>
+           <div class="imgs">
+        <img class="img1" src="photo1711042071.jpeg" alt="norton"/> 
+        <img class="img2" src="photo1714583619.jpeg" alt="poco" />
+        <img class="img3" src="photo1677165946.jpeg" alt="tsukasa"/>
+    </div>
+    <div class="text">
+        <p>нажми на меня!</p> 
+        <p>нажми на меня!</p> 
+        <p>нажми на меня!</p>
+    </div>
